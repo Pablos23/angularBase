@@ -1,0 +1,34 @@
+<!-- <div class="layout-wrapper" [ngClass]="{'layout-sidebar-active': sidebarActive}">
+
+    <app-menu></app-menu>
+
+    <app-topbar></app-topbar>
+
+    <div class="layout-main">
+        <div class="layout-content">
+            <router-outlet></router-outlet>
+        </div>
+
+        <app-footer></app-footer>
+
+        <div class="layout-main-mask"></div>
+    </div>
+
+</div> -->
+<div class="wrapper-top">
+    <app-topbar></app-topbar>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <app-menu></app-menu>
+        <!-- Page Content  -->
+        <div id="content" class="content-fixed">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <router-outlet></router-outlet>
+            </nav>
+            <nav>
+                <app-footer></app-footer>
+            </nav>
+        </div>
+    </div>
+</div>
